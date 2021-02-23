@@ -1,0 +1,190 @@
+// Header Design Start 
+.topHeader {
+    img {
+        width: 300px;
+    }
+
+    .second_half {
+        li {
+            list-style: none;
+        }
+        h3 {
+            font-weight: 500;
+            color: #212529;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0;
+        }
+        a {
+            @extend h3;
+            font-weight: 800;
+            font-size: 18px;
+            color: #4e4b4b;
+
+            &:hover {
+                text-decoration: underline;
+                color: #3a947a;
+            }
+        }
+    }
+}
+
+.buttonPart {
+    .firstButton {
+        background-color: #555558;
+
+        a {
+            font-weight: 700;
+            font-size: 1.87rem;
+            color: #fff;
+        }
+        &:hover {
+            background-color: #fff;
+            
+            a {
+                color:#555558;
+            }
+        }
+    }
+
+    .secondButton {
+        background-color: #005031;
+        @extend .firstButton;
+
+        &:hover {
+            a {
+                color: #005031;
+            }
+        }
+    }
+}
+// Header Design End
+
+
+//Section One Design Start
+.sectionOne {
+    .textPart {
+        p {
+            font-size: 18px;
+            color: #212529;
+
+            strong {
+                font-weight: bolder;
+            }
+        }
+    }
+    // carousel design 
+    .carouselPart {
+        h3 {
+            font-size: 23px;
+            color: #414144;
+            font-weight: 600;
+        }
+        img {
+            width: 450px;
+        }
+    }
+
+    .listPart {
+        @extend .textPart;
+
+        ul {
+            li {
+                font-size: 18px;
+                color: #212529;
+            }
+        }
+        
+    }
+}
+
+// Image with text design 
+.imageBox {
+    .imageText {
+        h3 {
+            font-size: 23px;
+            color: #414144;
+            font-weight: 600;
+          
+        }   
+    }
+    .imageBoxText {
+        .button {
+            a#lastButton{
+                background-color: #3a947a;
+                font-size: 22px;
+                font-weight: 700;
+                color: #fff;
+                border-radius: 0;
+                border: 1px solid #3a947a;
+                padding: 8px 114px;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #3a947a;
+                }
+            }
+        }
+    }
+}
+//Section One Design End
+
+//section two design start
+.sectionTwo {
+    .onlyText {
+        p {
+            font-size: 18px;
+        }
+        h3 {
+            font-weight: 700;
+        }
+    }
+}
+//section two design end
+
+
+//section three design start
+.sectionthree {
+    .greenBox {
+        background-color: #005031;
+        h3 {
+            font-size: 26px;
+            color: #fff;
+            font-weight: 700;
+        }
+        .smallBoxOne {
+            background-color: #49776A;
+            img {
+                width: 150px;
+            }
+            p {
+                color: #fff;
+            }
+
+        }
+        .smallBoxTwo {
+            @extend .smallBoxOne;
+            background-color: #3A947A;
+        }
+    }
+}
+//section three design end
+
+// footer design start 
+.lastSection {
+    background-color: #414144;
+    color: #fff;
+    .footerPart {
+        p{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        a {
+            color: #fff;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+// footer design end
